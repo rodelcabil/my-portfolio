@@ -5,6 +5,8 @@ export const HomeContainer = styled.div`
     background: #0D1B2A;
     padding: 60px; 
 
+   
+
     @media screen and (max-width: 600px){
         padding: 10px;
     }
@@ -20,7 +22,15 @@ export const RowContainer = styled.div`
     max-width: 1500px;
     margin: auto;
     
+    #tsparticles{
+        position : absolute;
+        width:100%;
+        height:100%;
+        z-index: 1;
 
+        
+    }
+    
     @media screen and (max-width: 800px){
         margin-top: 30px;
         padding: 0;
@@ -49,16 +59,19 @@ export const Column = styled.div`
     justify-content: center;
     padding-top: 20px;
     color: #fff;
-    
+    z-index: 100;
+    background: transparent;
+
     @media (min-width: 701px) and (max-width: 800px){
         border-radius: 20px;
         margin: auto;
+        z-index: 100;
         flex-basis: 100%;
     }
 
     @media (min-width: 250px) and (max-width: 700px){
         flex-basis: 100%;
-       
+        z-index: 100;
     }
     
 `;
@@ -114,6 +127,7 @@ export const ImageComponent = styled.img`
     height: 510px;
     display: flex;
     align-self: flex-end;   
+    background: transparent;
 
     @media (min-width: 600px) and (max-width: 800px){
         margin: auto;
