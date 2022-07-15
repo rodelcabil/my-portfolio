@@ -1,5 +1,4 @@
 import React from 'react'
-import Tag from '../Tag/tag'
 import { RecentCardContainer } from './recentCard-elements'
 
 const RecentWorkCard = ({imgPath, projectTitle, projectDescription, tag}) => {

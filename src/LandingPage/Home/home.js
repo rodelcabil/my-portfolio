@@ -13,84 +13,27 @@ import RecentWorkSection from './Sections/RecentWork/recent'
 import { Button } from '../../globalStyles'
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
+import { particles } from './particles';
 
 const Home = () => {
     const particlesInit = async (main) => {
         await loadFull(main);
     };
 
+
+
     return (
         <>
 
             <HomeContainer>
-               
-                <RowContainer>
-                <Particles
-                    id="tsparticles"
-                    init={particlesInit}
-                    preset="stars"
-                    options={{
-                        fullScreen: {
-                            enable: false,
-                            
-                            zIndex: 1
-                        },
-                        fpsLimit: 120,
-                        background: {
-                            color: "transparent"
-                        },
-                        interactivity: {
-                            events: {
-                                onClick: { enable: true, mode: "push" },
 
-                                resize: true
-                            },
-                            modes: {
-                                push: { quantity: 4 },
-                                repulse: { distance: 200, duration: 0.4 }
-                            }
-                        },
-                        particles: {
-                            color: { value: "#ffffff" },
-                            move: {
-                                direction: "none",
-                                enable: true,
-                                outModes: "bounce",
-                                random: false,
-                                speed: 0.2,
-                                straight: false
-                            },
-                            number: {
-                                density: {
-                                    enable: true,
-                                    area: 800
-                                },
-                                value: 50
-                            },
-                            opacity: {
-                                animation: {
-                                    enable: true,
-                                    speed: 0.05,
-                                    sync: true,
-                                    startValue: "max",
-                                    count: 1,
-                                    destroy: "min"
-                                },
-                                value: {
-                                    min: 0,
-                                    max: 0.5
-                                }
-                            },
-                            shape: {
-                                type: "circle"
-                            },
-                            size: {
-                                value: { min: 1, max: 5 }
-                            },
-                            detectRetina: true
-                        }
-                    }}
-                />
+                <RowContainer>
+                    <Particles
+                        id="tsparticles"
+                        init={particlesInit}
+                        preset="links"
+                        options={particles}
+                    />
                     <Column>
                         <Heading>
                             I am<br /> <span>Rodel</span> E. Cabil
@@ -101,7 +44,7 @@ const Home = () => {
                         <Button>See my works</Button>
 
                     </Column>
-                    <Column>
+                    <Column >
                         <ImageComponent src={Me} alt="Me" />
                     </Column>
 

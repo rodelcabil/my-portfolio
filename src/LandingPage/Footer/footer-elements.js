@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const FooterSection =  styled.footer`
-background: #0D1B2A;
+background: #040A0E;
 
 @media screen and (max-width: 910px){
     width: 100%;

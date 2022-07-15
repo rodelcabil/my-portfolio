@@ -6,7 +6,7 @@ import {FaMagento} from 'react-icons/fa';
 
 
 export const Nav =  styled.nav`
-background: #0D1B2A;
+background: #040A0E;
 height: 60px;
 display: flex;
 justify-content: center;

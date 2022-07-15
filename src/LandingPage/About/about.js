@@ -30,9 +30,9 @@ const About = () => {
                 </Column>
                 <Column>
                     <div className="imageContainer">
-                        <img className="img-1" src="https://images.unsplash.com/photo-1502945015378-0e284ca1a5be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8d2Vic2l0ZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="My Picture" />
-                        <img className="img-2" src="https://media.istockphoto.com/photos/software-developers-doing-some-research-picture-id1016662006?b=1&k=20&m=1016662006&s=170667a&w=0&h=rRERH0aNQ4NwEk0bj8bslKds7atR-LIJ3iNazpaPBjQ= " alt="My Picture" />
-                        <img className="img-3" src="https://media.istockphoto.com/photos/put-more-in-get-more-out-picture-id1291318636?b=1&k=20&m=1291318636&s=170667a&w=0&h=UvVIk7wwkN3X9OFm8gBlWWviV5vAjfrq2ejYP30JmnA=" alt="My Picture" />
+                        <img className="img-1" src="https://images.unsplash.com/photo-1502945015378-0e284ca1a5be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8d2Vic2l0ZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="My Pictures" />
+                        <img className="img-2" src="https://media.istockphoto.com/photos/software-developers-doing-some-research-picture-id1016662006?b=1&k=20&m=1016662006&s=170667a&w=0&h=rRERH0aNQ4NwEk0bj8bslKds7atR-LIJ3iNazpaPBjQ= " alt="My Pictures" />
+                        <img className="img-3" src="https://media.istockphoto.com/photos/put-more-in-get-more-out-picture-id1291318636?b=1&k=20&m=1291318636&s=170667a&w=0&h=UvVIk7wwkN3X9OFm8gBlWWviV5vAjfrq2ejYP30JmnA=" alt="My Pictures" />
                     </div>
                 </Column>
             </RowContainer>

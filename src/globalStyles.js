@@ -27,7 +27,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     &::-webkit-scrollbar-thumb:hover {
-            background-color: #2988B4;    
+            background-color: #295074;    
         }
 `;
 
@@ -50,7 +50,7 @@ export const Button = styled.button`
     text-decoration: none;
     display: inline-block;
     text-transform: uppercase;
-    background-color: #2988B4;
+    background-color: #295074;
     color:  #fff;
     margin: 40px 0;
     border: none;
@@ -71,6 +71,7 @@ export const Button = styled.button`
         height: 40px;
         margin: auto;
         margin-top: 20px;
+        margin-bottom: 30px
     } 
 `;
 
@@ -78,7 +79,7 @@ export const CardButton = styled.a`
     text-decoration: none;
     display: flex;
     align-items: center ;
-    background-color: #2988B4;
+    background-color: #295074;
     color:  #fff;
     border: none;
     height: 30px;
