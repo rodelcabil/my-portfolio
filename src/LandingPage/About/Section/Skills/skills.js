@@ -15,7 +15,8 @@ const SkillsSection = () => {
                 <SkillCard title="JAVASCRIPT" imgPath="https://www.freepnglogos.com/uploads/javascript-png/js-logo-png-5.png" />
                 <SkillCard title="REACT JS"  imgPath="https://icons-for-free.com/iconfiles/png/512/design+development+facebook+framework+mobile+react+icon-1320165723839064798.png"  />
                 <SkillCard title="TAILWIND CSS"  imgPath="https://tailwindcss.com/_next/static/media/social-square.b622e290e82093c36cca57092ffe494f.jpg"  />
-               
+                <SkillCard title="REACT NATIVE"  imgPath="https://vectorified.com/images/icon-react-native-24.png"  />
+                <SkillCard title="FLUTTER"  imgPath="https://alexisvt.gallerycdn.vsassets.io/extensions/alexisvt/flutter-snippets/0.0.2/1529817162825/Microsoft.VisualStudio.Services.Icons.Default"  />
             </RowContainer>
         </SkillsContainer>
     )

@@ -3,21 +3,25 @@ import { CardButton } from '../../globalStyles'
 import { OtherCardComponent } from './otherCard-elements'
 import { BiCodeAlt, BiShowAlt } from 'react-icons/bi'
 
-const OtherCard = ({imgPath, title, description, tag, projectLink, sourceCodeLink}) => {
+const OtherCard = ({ imgPath, title, description, tag, projectLink, sourceCodeLink }) => {
     return (
         <OtherCardComponent>
-            <img className="imgs" src={imgPath} alt="Project img"/>
+            <img className="imgs" src={imgPath} alt="Project img" />
             <div className="detailsContainer">
-                <p className="projTitle">{title}</p>
+                <div className='cardHeader'>
+                    <span className="projTitle">{title}</span>
+                    <div>
+                        <CardButton href={projectLink} target="_blank" className='viewButton'><BiShowAlt className="button-icon" /><span>&nbsp;Visit Site</span></CardButton>
+                    </div>
+                    
+                </div>
+                <br/>
                 <p className="projDescription">{description}</p>
-                
+
                 <div className='tag-container'>
                     {tag}
                 </div>
-                <div className='button-container'>
-                    <CardButton href={projectLink} target="_blank"><BiShowAlt className="button-icon"/>&nbsp;View Demo</CardButton>
-                    <CardButton href={sourceCodeLink} target="_blank"><BiCodeAlt className="button-icon"/>&nbsp;Source Code</CardButton>
-                </div>
+
             </div>
         </OtherCardComponent>
     )

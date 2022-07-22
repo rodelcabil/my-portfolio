@@ -31,18 +31,41 @@ export const OtherCardComponent = styled.div`
    
 
     .imgs{
-        flex: 1;
-        height: 500px;
+        
+        height: 270px;
         border-top-left-radius: 2px;
         border-top-right-radius: 2px;
     }
     .detailsContainer{
         padding: 20px;
 
+        .cardHeader{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .viewButton{
+                margin-right: 0px;
+                @media screen and (max-width: 600px){
+                    span{
+                        display: none;
+                    }
+                }
+            }
+            .button-icon{
+                font-size: 18px;
+
+                @media screen and (max-width: 600px){
+                   font-size: 20px;
+                }
+            }
+            
+        }
+
         .projTitle{
             font-weight: bolder;
             font-size: 16px;
-            margin-bottom: 10px;
+            max-width: 300px;
             color: #2988B4;
         }
         .projDescription{
@@ -63,14 +86,14 @@ export const OtherCardComponent = styled.div`
             margin-bottom: 10px;
             width: 100%;
             display:  flex;
-           
+            justify-content: center;
 
             .button-icon{
                 font-size: 18px;
             }
 
             @media screen and (max-width: 600px){
-                justify-content: space-between;
+              
             }
             
         }

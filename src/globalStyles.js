@@ -1,4 +1,4 @@
-import styled,{createGlobalStyle} from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
     *{
@@ -10,20 +10,18 @@ const GlobalStyle = createGlobalStyle`
     }
 
     &::-webkit-scrollbar {
-            width: 8px;               /* width of the entire scrollbar */
+            width: 8px;              
     }
 
     &::-webkit-scrollbar-track {
          background: #fff;
        
-                 /* color of the tracking area */
+                
     }
 
     &::-webkit-scrollbar-thumb {
-    background-color: #C4C4C4;    /* color of the scroll thumb */
-    border-radius: 20px;       /* roundness of the scroll thumb */
-                            /* creates padding around scroll thumb */
-
+    background-color: #C4C4C4;    
+    border-radius: 20px;     
     }
 
     &::-webkit-scrollbar-thumb:hover {
@@ -32,7 +30,7 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 
-export const Container =  styled.div`
+export const Container = styled.div`
 z-index: 1;
 width: 100%;
 max-width: 2100px;
@@ -81,8 +79,8 @@ export const CardButton = styled.a`
     align-items: center ;
     background-color: #295074;
     color:  #fff;
-    border: none;
-    height: 30px;
+    border-color: none;
+    height: 35px;
     padding: 4px 12px ;
     border-radius: 3px;
     width: fit-content;
@@ -102,6 +100,42 @@ export const CardButton = styled.a`
         margin: auto;
        
     } 
+`;
+
+export const Wrapper = styled.div`
+    background: transparent;
+    max-width: 2100px;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+   
+    overflow-y: auto;
+    overflow-x: hidden;
+    @media screen and (max-width: 600px){
+        width: 100%;
+     
+    }
+    &::-webkit-scrollbar {
+            width: 8px;               /* width of the entire scrollbar */
+    }
+
+    &::-webkit-scrollbar-track {
+         background: #fff;
+       
+                 /* color of the tracking area */
+    }
+
+    &::-webkit-scrollbar-thumb {
+    background-color: #C4C4C4;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+                            /* creates padding around scroll thumb */
+
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+            background-color: #FE9C8F;    
+        }
+   
 `;
 
 export default GlobalStyle

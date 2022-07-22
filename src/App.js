@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import GlobalStyle from './globalStyles';
+import Chatbot from './Components/ChatBot/chatbot';
+import SocialMedia from './Components/SocialMedia/socialMedia';
+import GlobalStyle, { Wrapper } from './globalStyles';
 import About from './LandingPage/About/about';
 import Contact from './LandingPage/Contact/contact';
 
@@ -22,6 +24,8 @@ function App() {
           <Route  path="/contact" component={Contact} />
            <Route  path="/about" component={About} />
         </Switch>
+        <SocialMedia/>
+       
         
     </Router>
   );

@@ -1,9 +1,10 @@
 import React from 'react'
+import Slide from 'react-reveal/Slide';
 import RecentWorkCard from '../../../../Components/RecentWorkCard/recentCard'
 import Tag from '../../../../Components/Tag/tag'
-import clone  from '../../../../images/clone.JPG'
-import coronapp  from '../../../../images/coronapp.JPG'
-import darkmode  from '../../../../images/darkmode.JPG'
+import clone  from '../../../../images/compressed/clone-min.JPG'
+import coronapp  from '../../../../images/compressed/coronapp-min.JPG'
+import darkmode  from '../../../../images/compressed/darkmode-min.JPG'
 import { RecentContainer, GridContainer } from './recent-elements'
 
 const RecentWorkSection = () => {
@@ -12,6 +13,7 @@ const RecentWorkSection = () => {
             <GridContainer>
                 <p className="sectionHeader">RECENT WORKS</p><br/>  
             </GridContainer>
+            <Slide right cascade >
             <GridContainer>
                 <RecentWorkCard 
                     projectTitle="Student Portal Clone" 
@@ -50,6 +52,7 @@ const RecentWorkSection = () => {
                     
                 />  
             </GridContainer>
+            </Slide>
         </RecentContainer>
     )
 }

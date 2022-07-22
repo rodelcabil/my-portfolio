@@ -6,6 +6,8 @@ import {ImLinkedin, ImFacebook2} from 'react-icons/im'
 import {FaTwitter} from 'react-icons/fa'
 import { Button } from '../../globalStyles'
 import { Socials } from '../Footer/footer-elements'
+import CustomButton from '../../Components/Button/button'
+import Chatbot from '../../Components/ChatBot/chatbot'
 
 const { TextArea } = Input;
 
@@ -14,10 +16,10 @@ const Contact = () => {
         <ContactsContainer>
             <RowContainer>
                 <Column>
-                    <span className="header">CONTACT</span>
+                    {/* <span className="header">CONTACT</span> */}
                     <span className="subheader">Are you interested?</span>
-                    <span className="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span><br/>
-                    <div className="contactDetailsContainerWrapper">
+                    <span className="description">Lorem ipsum dolor sit amet, consectetur et dolore magna aliqua.</span><br/>
+                    {/* <div className="contactDetailsContainerWrapper">
                         <div className="contactDetailsContainer">
                             <MdAlternateEmail className="icons"/> 
                             <span>rodeliocabil0@gmail.com</span>
@@ -36,7 +38,7 @@ const Contact = () => {
                         <ImLinkedin className='social-icons'/>
                         <ImFacebook2 className='social-icons'/>
                         <FaTwitter className='social-icons'/>
-                    </Socials>
+                    </Socials> */}
                 </Column>
                 <Column>
                     <div className="formContainer">
@@ -46,11 +48,11 @@ const Contact = () => {
                         placeholder="Enter your Message"
                         autoSize={{ minRows: 4, maxRows: 6 }}
                         />
-                        <Button>Submit</Button>
+                        <CustomButton title="Submit email" />
                     </div>
                 </Column>
             </RowContainer>
-           
+            <Chatbot/>
         </ContactsContainer>
     )
 }

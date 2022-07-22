@@ -135,12 +135,12 @@ export const Subtitle = styled.span`
 
 export const ImageComponent = styled.img`
     max-width: 100%;
-    height: 510px;
+    height: 500px;
     min-width: 300px;
     display: flex;
     align-self: flex-end;   
     background: transparent;
-    flex: 1;
+    
 
     @media (min-width: 600px) and (max-width: 800px){
         margin: auto;

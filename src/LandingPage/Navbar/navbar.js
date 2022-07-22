@@ -4,7 +4,7 @@ import {
     FaTimes
 } from 'react-icons/fa';
 
-import {BsLightningChargeFill} from 'react-icons/bs'
+import {CgMenuRightAlt, CgClose} from 'react-icons/cg'
 import { IconContext } from 'react-icons/lib';
 import {
     Nav, 
@@ -65,7 +65,7 @@ const Navbar = () => {
                             </div>
                         </NavLogo>
                         <MobileIcon onClick={handleClick} >
-                            {click ? <FaTimes style={{color: 'white'}}/> : <FaBars style={{color: 'white'}}/>}
+                            {click ? <CgClose style={{color: 'white'}}/> : <CgMenuRightAlt style={{color: 'white'}}/>}
                         </MobileIcon>
                         <div>
                             <NavMenu onclick={handleClick} click={click}>

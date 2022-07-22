@@ -1,8 +1,10 @@
 import React from 'react'
 import { AboutContainer, Column, RowContainer } from './about-elements'
-import { Button } from '../../globalStyles'
+import CV from '../../file/my_resume.pdf'
 import SkillsSection from './Section/Skills/skills'
 import Footer from '../Footer/footer'
+import Chatbot from '../../Components/ChatBot/chatbot'
+import CustomButton from '../../Components/Button/button'
 const About = () => {
     return (
         <>
@@ -26,7 +28,9 @@ const About = () => {
                             <span>Past Companies</span>
                         </div>
                     </div>
-                    <Button>Download cv</Button>
+                    <div>
+                        <a href={CV} target='_blank' rel='noopener noreferrer'><CustomButton title="download CV" /> </a>
+                    </div>
                 </Column>
                 <Column>
                     <div className="imageContainer">
@@ -39,6 +43,7 @@ const About = () => {
         </AboutContainer>
         <SkillsSection/>
         <Footer />
+        <Chatbot/>
         </>
     )
 }

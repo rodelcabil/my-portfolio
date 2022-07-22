@@ -1,8 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import CustomButton from '../../Components/Button/button'
 import { Button } from '../../globalStyles'
-import { FooterSection, FooterContainer, FooterDescription, CopyRights, Socials } from './footer-elements'
-import {ImLinkedin, ImFacebook2} from 'react-icons/im'
-import {FaTwitter} from 'react-icons/fa'
+import { FooterSection, FooterContainer, FooterDescription, CopyRights } from './footer-elements'
+
 
 const  Footer = () => {
     return (
@@ -11,14 +12,9 @@ const  Footer = () => {
                 <FooterDescription>
                    Are you interested?<br/> You can Contact me now.
                 </FooterDescription>
-                <Button>Contact Now</Button>
+                <Link to="/contact"><CustomButton title="Contact now" /></Link>
                 <CopyRights>
                     <span>Copyright 2021 | RC PORTFOLIO</span>
-                    <Socials>
-                        <ImLinkedin className='social-icons'/>
-                        <ImFacebook2 className='social-icons'/>
-                        <FaTwitter className='social-icons'/>
-                    </Socials>
                     <span>Powered by: RODEL E. CABIL</span>
                 </CopyRights>
             </FooterContainer>

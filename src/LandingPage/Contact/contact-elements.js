@@ -8,7 +8,9 @@ export const ContactsContainer = styled.div`
     justify-content:  center;
     align-content: center;
     height: calc(100vh - 60px);
+    
     @media screen and (max-width: 600px){
+    
         padding: 10px;
     }
    
@@ -16,7 +18,8 @@ export const ContactsContainer = styled.div`
 
 export const RowContainer = styled.div`
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
     flex-wrap: wrap;
     justify-content: center;
     max-width: 1500px;
@@ -35,19 +38,19 @@ export const RowContainer = styled.div`
     @media screen and (max-width: 600px){
         text-align: center;
         display: block;
-        margin-left: auto;
-        margin-right: auto;
+        margin: auto;
         flex-basis: 50%;
     }
    
 `;
 
 export const Column = styled.div`
-    flex-basis: 50%;
+    flex-basis: 80%;
     min-width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     color: #000;
 
     .header{
@@ -95,11 +98,12 @@ export const Column = styled.div`
         flex-direction: column;
         align-items: center;
         padding-left: 20px;
+        width: 600px;
         padding-top: 20px;
 
         @media (min-width: 250px) and (max-width: 700px){
             padding-left: 0px;
-        
+            width: 100%;
         }
     }
     @media (min-width: 701px) and (max-width: 800px){
